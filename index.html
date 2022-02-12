@@ -21,12 +21,21 @@ background: radial-gradient(circle, rgba(231,228,19,1) 0%, rgba(215,169,29,1) 38
     </style>
     <script type="text/javascript">
       function showDesigns() {
-        const designs = document.createElement('a');
-        designs.id = "handesign";
-        designs.href = "handesign.html";
-        document.getElementById("experience").appendChild(designs);
-        designs.innerHTML = "Handicap Architectural Design";
-        document.getElementById("handesign").click();
+        var a = document.createElement('a');
+            // Create the text node for anchor element.
+            var link = document.createTextNode("Handicap Architectural Designs");
+
+            // Append the text node to anchor element.
+            a.appendChild(link);
+
+                // Set the title.
+                a.title = "Handicap Architectural Designs";
+
+                // Set the href property.
+                a.href = "handesign.html"; 
+
+                // Append the anchor element to the body.
+                document.body.appendChild(a);
       }
     </script>
   </head>
