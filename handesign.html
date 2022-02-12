@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap" rel="stylesheet">
+    <title>Handicap Designs</title>
+    <style media="screen">
+      body {
+        background-color: black;
+      }
+      .descrip {
+        text-align: center;
+      }
+      #results {
+        visibility: hidden;
+      }
+
+      #terminal {
+        border: 5px solid white;
+        background-color: black;
+        color: white;
+        font-size: 25px;
+        font-family: "Encode Sans SC", sans-serif;
+        visibility: hidden;
+      }
+    </style>
+    <script type="text/javascript">
+      function changeGib() {
+        alert("Successfully Submitted. Natural Language is Processing.")
+        document.getElementById("cinfo").innerHTML = "Translated over 45 languages, primarily Mandarin and Russian. Results received."
+        document.getElementById('results').style.visibility = "visible"
+      }
+
+      function turnWhite() {
+        document.body.style.backgroundColor = "white"
+      }
+
+      function openTerminal() {
+        document.getElementById("terminal").style.visibility = "visible"
+      }
+
+    </script>
+  </head>
+  <body onclick = "turnWhite()">
+    <div class = "descrip" onclick = "openTerminal()">
+    <h1> Ndicahp gnIsed </h1>
+    <p id = "gibberish s1">Speajewk. Yeksoaeesney. Toleaha tahwko eola fgie aole sopken asgeng</p>
+    <p id = "gibberish s2"> Kowabheasjke. Ooaleow ashjaneas. HTealwa. Helae morwaynes, jreblubber. </p>
+    <p id = "gibberish s3"> Lawehsela. Hekajjmean anwolet. H%2nsmae. </p>
+    </div>
+    <hr>
+    <div id = "terminal">
+    <form class="terminal">
+      <input type = "text" id = "termcode" size = "100" value = "">
+      <button type="button" id="submit" onclick = "changeGib()">Run</button>
+      <p id = "cinfo"> </p>
+      <p id = "results"> The translation is as follows: Handicap Design. Designed to remove future Heianity within society -- especially, the space race. It does this by removing talents through pain. Implemented a spoken language understanding algorithm to listen on citizens who have the potential to oppose us. Designed with a laser to eliminate the potential opposer.
+          New Transmitter technology implemented. UPDATE: Harrison Bergeron has defied the system. Our government has fallen. You need to find my journal to stop the revolution and Heianity. Now. 祝你好运
+        </p>
+    </form>
+    </div>
+  </body>
+</html>

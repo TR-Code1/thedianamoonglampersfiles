@@ -13,40 +13,62 @@ background: radial-gradient(circle, rgba(231,228,19,1) 0%, rgba(215,169,29,1) 38
       }
      h1 {
        font-family: "Satisfy", cursive;
+       position: sticky;
+       text-align: center;
+     }
+
+     h3 {
+       text-align: center;
+       font-size: 35px;
+     }
+
+     #vwr {
+       text-align: center;
+       font-family: Verdana;
+
      }
 
      a {
-       display: none;
+       visibility: hidden;
+     }
+
+     .container {
+       padding: 25px;
+       margin: 25px;
+       font-family: Verdana;
+       text-align: center;
+     }
+
+     .geninfo {
+       padding: 25px;
+       margin: 25px;
+       position: relative;
+       border: 10px solid rgb(255,240,181);
+       background-color: rgb(227,167,157);
+     }
+
+     .experience {
+       padding: 25px;
+       margin: 25px;
+       position: relative;
+       border: 10px solid rgb(255,240,181);
+       background-color: rgb(227,167,157);
      }
     </style>
     <script type="text/javascript">
       function showDesigns() {
-        var a = document.createElement('a');
-            // Create the text node for anchor element.
-            var link = document.createTextNode("Handicap Architectural Designs");
-
-            // Append the text node to anchor element.
-            a.appendChild(link);
-
-                // Set the title.
-                a.title = "Handicap Architectural Designs";
-
-                // Set the href property.
-                a.href = "handesign.html"; 
-
-                // Append the anchor element to the body.
-                document.body.appendChild(a);
+        document.getElementById("handesign").style.visibility = "visible"
       }
     </script>
   </head>
   <body>
     <h1> Glampers, Diana </h1>
     <h3> File #40 </h3>
-    <p> Viewer: President Selkirk </p>
+    <p id = "vwr"> Viewer: President Selkirk </p>
     <div class="container">
-      <div class = "general-info">
+      <div class = "geninfo">
         <h4 id = "genfo"> General Information </h4>
-        <p> Birth Date: 18/12/08 </p>
+        <p> Birth Date: 18/12/49 </p>
         <p> Address: 3965 Flamenco </p>
         <p> Handicap: N/A </p>
         <p> Familial Information: Death due to Heianity </p>
@@ -56,6 +78,7 @@ background: radial-gradient(circle, rgba(231,228,19,1) 0%, rgba(215,169,29,1) 38
         <p> PhD in Human Rights </p>
         <p> 10 Years as Handicapper General to prevent Heianity </p>
         <p onclick = "showDesigns()"> Handicap Engineer and Designer </p>
+        <a id = "handesign" href = "handesign.html">Update: Handicap Architectural Designs </a>
     </div>
   </body>
 </html>
