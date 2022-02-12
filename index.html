@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>The Diana Moon Glampers Files</title>
+    <style media="screen">
+      body {
+        background: rgb(231,228,19);
+background: radial-gradient(circle, rgba(231,228,19,1) 0%, rgba(215,169,29,1) 38%, rgba(228,177,68,1) 100%);
+      }
+     h1 {
+       font-family: "Satisfy", cursive;
+     }
+
+     a {
+       display: none;
+     }
+    </style>
+    <script type="text/javascript">
+      function showDesigns() {
+        const designs = document.createElement('a');
+        designs.id = "handesign";
+        designs.href = "handesign.html";
+        document.getElementById("experience").appendChild(designs);
+        designs.innerHTML = "Handicap Architectural Design";
+        document.getElementById("handesign").click();
+      }
+    </script>
   </head>
   <body>
     <h1> Glampers, Diana </h1>
@@ -10,12 +36,17 @@
     <p> Viewer: President Selkirk </p>
     <div class="container">
       <div class = "general-info">
-        <h4> General Information </h4>
+        <h4 id = "genfo"> General Information </h4>
         <p> Birth Date: 18/12/08 </p>
         <p> Address: 3965 Flamenco </p>
         <p> Handicap: N/A </p>
         <p> Familial Information: Death due to Heianity </p>
       </div>
+      <div class = "experience">
+        <h4 id = "exp"> Experience </h4>
+        <p> PhD in Human Rights </p>
+        <p> 10 Years as Handicapper General to prevent Heianity </p>
+        <p onclick = "showDesigns()"> Handicap Engineer and Designer </p>
     </div>
   </body>
 </html>
